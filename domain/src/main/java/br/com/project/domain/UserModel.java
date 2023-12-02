@@ -9,6 +9,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserModel {
@@ -21,7 +22,6 @@ public class UserModel {
     private String password;
     private Type type;
     private String token;
-
 
 }
 
