@@ -33,6 +33,10 @@ public class LoginDAO implements LoginRepository {
                 userModel = new UserModel();
                 userModel.setId(resultSet.getInt("id"));
                 userModel.setEmail(resultSet.getString("email"));
+
+                final String type = resultSet.getString("tipo");
+                userModel.setType(UserModel.Type.valueOf(type));
+
             } else {
                 userModel = null;
             }

@@ -23,5 +23,11 @@ public class UserModel {
     private Type type;
     private String token;
 
+    public enum Type {
+        ADMINISTRATOR,  // 0
+        EMPLOYEE,       // 1
+        CLIENT          // 2
+    }
+
 }
 

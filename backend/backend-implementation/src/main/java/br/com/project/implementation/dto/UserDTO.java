@@ -1,6 +1,5 @@
 package br.com.project.implementation.dto;
 
-import br.com.project.domain.Type;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,4 +20,10 @@ public class UserDTO {
     @Getter(AccessLevel.NONE)
     private String password;
     private Type type;
+
+    enum Type {
+        ADMINISTRATOR,  // 0
+        EMPLOYEE,       // 1
+        CLIENT          // 2
+    }
 }
