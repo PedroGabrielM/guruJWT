@@ -18,7 +18,6 @@ public class UserModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String email;
-    @Getter(AccessLevel.NONE)
     private String password;
     private Type type;
     private String token;
