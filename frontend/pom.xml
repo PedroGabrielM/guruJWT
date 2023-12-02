@@ -3,18 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>br.com.project</groupId>
+        <artifactId>guruJWT</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>br.com.project</groupId>
-    <artifactId>guruJWT</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    
-    <modules>
-        <module>domain</module>
-        <module>backend</module>
-        <module>frontend</module>
-    </modules>
-
+    <artifactId>frontend</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>frontend-usecases</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
