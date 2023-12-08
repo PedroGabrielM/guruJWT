@@ -14,24 +14,6 @@
                 <form class="login-box" method="post"
                       th:action="@{/account/authentication}">
 
-                    <div class="row margin-bottom-1x">
-                        <div class="col-xl-4 col-md-6 col-sm-4">
-                            <a class="btn btn-sm btn-block facebook-btn" href="#">
-                                <i class="socicon-facebook"></i>&nbsp;Facebook
-                            </a>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-4">
-                            <a class="btn btn-sm btn-block twitter-btn" href="#">
-                                <i class="socicon-twitter"></i>&nbsp;Twitter
-                            </a>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-4">
-                            <a class="btn btn-sm btn-block google-btn" href="#">
-                                <i class="socicon-googleplus"></i>&nbsp;Google+
-                            </a>
-                        </div>
-                    </div>
-                    <h4 class="margin-bottom-1x">Ou use os campos abaixo</h4>
                     <div class="form-group input-group">
 
                         <div class="col-12">
@@ -69,62 +51,6 @@
                     </div>
                 </form>
 
-            </div>
-            <div class="col-md-6">
-                <div class="padding-top-3x hidden-md-up"></div>
-                <h3 class="margin-bottom-1x">Não tem uma conta? Crie!</h3>
-                <p>Criar sua conta leva menos que um minuto e te dá acesso total sobre seus pedidos.</p>
-
-                <form class="row" method="post" th:action="@{/user/create}">
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label for="reg-fn">Nome Completo</label>
-                            <input class="form-control" type="text"
-                                   id="reg-fn"
-                                   required=""
-                                   th:name="fullName">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="reg-email">E-mail</label>
-                            <input class="form-control" type="email"
-                                   id="reg-email"
-                                   required=""
-                                   th:name="email">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="reg-username">Nome de usuário</label>
-                            <input class="form-control" type="text"
-                                   id="reg-username"
-                                   required=""
-                                   th:name="username">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="reg-pass">Senha</label>
-                            <input class="form-control" type="password"
-                                   id="reg-pass"
-                                   required=""
-                                   th:name="password">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="reg-pass-confirm">Confirme a senha</label>
-                            <input class="form-control" type="password"
-                                   id="reg-pass-confirm"
-                                   required=""
-                                   th:name="confirmPassword">
-                        </div>
-                    </div>
-                    <div class="col-12 text-center text-sm-right">
-                        <button class="btn btn-primary margin-bottom-none" type="submit">Criar conta</button>
-                    </div>
-                </form>
             </div>
         </div>
     </div>

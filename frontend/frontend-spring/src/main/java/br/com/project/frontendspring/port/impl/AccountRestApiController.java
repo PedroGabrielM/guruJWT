@@ -22,7 +22,7 @@ public class AccountRestApiController implements AccountRestService {
             final HttpHeaders httpHeaders = getBasicHeaders(email, password);
 
             final HttpEntity<String> httpEntity = new HttpEntity<>(httpHeaders);
-            final String endpoint = "http://localhost:8081/api/authentication/v1/login";
+            final String endpoint = "http://localhost:8081/api/auth/v1/login";
             ResponseEntity<UserModel> responseEntity = restTemplate.exchange(
                     endpoint,
                     HttpMethod.POST,
@@ -45,7 +45,7 @@ public class AccountRestApiController implements AccountRestService {
             final HttpHeaders httpHeaders = getBasicHeaders(email, password);
 
             final HttpEntity<String> httpEntity = new HttpEntity<>(httpHeaders);
-            final String endpoint = "http://localhost:8081/api/authentication/v2/login";
+            final String endpoint = "http://localhost:8081/api/auth/v2/login";
             ResponseEntity<UserModel> responseEntity = restTemplate.exchange(
                     endpoint,
                     HttpMethod.POST,

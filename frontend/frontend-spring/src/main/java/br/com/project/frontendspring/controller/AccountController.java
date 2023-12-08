@@ -19,15 +19,5 @@ public class AccountController {
     public String getLoginPage() {
         return "/account/login";
     }
-
-    @GetMapping("/orders")
-    public String getOrdersPage() {
-        return "/account/my-orders";
-    }
-
-    @GetMapping("/profile")
-    public String getProfilePage() {
-        return "/account/my-profile";
-    }
-
+    
 }
